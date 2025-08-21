@@ -1,0 +1,316 @@
+/* Register Page */
+.register {
+    padding: var(--spacing-2xl) 0;
+    min-height: calc(100vh - 160px);
+    background: var(--background-color);
+}
+
+.register__container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-medium);
+    overflow: hidden;
+}
+
+.register__header {
+    padding: var(--spacing-2xl);
+    text-align: center;
+    background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary-color) 100%);
+    color: white;
+}
+
+.register__header h1 {
+    font-size: var(--font-size-3xl);
+    margin-bottom: var(--spacing-sm);
+    color: var(--secondary-color);
+}
+
+.register__header p {
+    color: var(--text-secondary);
+    margin-bottom: 0;
+}
+
+/* Form Styles */
+.form {
+    padding: var(--spacing-2xl);
+}
+
+.form__section {
+    margin-bottom: var(--spacing-2xl);
+    padding-bottom: var(--spacing-2xl);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.form__section:last-of-type {
+    border-bottom: none;
+    margin-bottom: var(--spacing-xl);
+}
+
+.form__title {
+    font-size: var(--font-size-xl);
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-lg);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+}
+
+.form__subtitle {
+    color: var(--text-secondary);
+    margin-top: calc(-1 * var(--spacing-md));
+    margin-bottom: var(--spacing-lg);
+    font-size: var(--font-size-base);
+}
+
+.form__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+}
+
+.form__group {
+    margin-bottom: var(--spacing-md);
+}
+
+.form__label {
+    display: block;
+    margin-bottom: var(--spacing-xs);
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+.form__input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    font-size: var(--font-size-base);
+    transition: var(--transition);
+    background-color: white;
+}
+
+.form__input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(183, 141, 101, 0.2);
+}
+
+.form__input::placeholder {
+    color: var(--text-light);
+}
+
+/* Password Input */
+.password-input {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.password-input input {
+    padding-right: 2.5rem;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 0.75rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.25rem;
+    color: var(--text-light);
+    opacity: 0.7;
+    transition: var(--transition);
+}
+
+.toggle-password:hover {
+    opacity: 1;
+    color: var(--primary-color);
+}
+
+/* Password Strength */
+.password-strength {
+    margin-top: var(--spacing-xs);
+}
+
+.strength-meter {
+    display: flex;
+    gap: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+
+.strength-segment {
+    height: 4px;
+    flex: 1;
+    background-color: #e0e0e0;
+    border-radius: 2px;
+    transition: var(--transition);
+}
+
+.strength-text {
+    font-size: 0.75rem;
+    color: var(--text-light);
+}
+
+/* Checkbox Styles */
+.form__checkbox {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    font-size: var(--font-size-sm);
+    line-height: 1.4;
+}
+
+.form__checkbox input[type="checkbox"] {
+    margin-top: 0.25rem;
+    flex-shrink: 0;
+}
+
+.form__link {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.form__link:hover {
+    text-decoration: underline;
+}
+
+/* Location Services */
+.location-details {
+    margin-top: var(--spacing-md);
+    padding: var(--spacing-md);
+    background-color: var(--color-light-gray);
+    border-radius: var(--border-radius);
+    transition: opacity 0.3s ease, max-height 0.3s ease;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+}
+
+.location-details--hidden {
+    display: none;
+}
+
+.location-details--visible {
+    display: block;
+    opacity: 1;
+    max-height: 500px; /* Adjust based on content */
+}
+
+.location-info {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+#refresh-location {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-size: 0.85rem;
+    padding: 0.25rem 0.5rem;
+}
+
+.refresh-icon {
+    transition: transform 0.3s ease;
+}
+
+#refresh-location:hover .refresh-icon {
+    transform: rotate(180deg);
+}
+
+/* Form Actions */
+.form__actions {
+    margin-top: var(--spacing-2xl);
+    text-align: center;
+}
+
+.form__footer {
+    margin-top: var(--spacing-lg);
+    font-size: var(--font-size-sm);
+    color: var(--text-secondary);
+}
+
+/* Form Error Messages */
+.form__error {
+    display: block;
+    margin-top: 0.25rem;
+    font-size: 0.75rem;
+    color: var(--error-color);
+    min-height: 1rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .form__row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    
+    .register__container {
+        border-radius: 0;
+    }
+    
+    .form {
+        padding: var(--spacing-lg);
+    }
+}
+
+/* Success State */
+.form__success {
+    text-align: center;
+    padding: var(--spacing-2xl);
+}
+
+.form__success-icon {
+    font-size: 4rem;
+    color: var(--success-color);
+    margin-bottom: var(--spacing-lg);
+    line-height: 1;
+}
+
+.form__success h2 {
+    color: var(--success-color);
+    margin-bottom: var(--spacing-sm);
+}
+
+.form__success-actions {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    max-width: 300px;
+    margin: var(--spacing-xl) auto 0;
+}
+
+@media (min-width: 480px) {
+    .form__success-actions {
+        flex-direction: row;
+        justify-content: center;
+        max-width: 100%;
+    }
+    
+    .form__success-actions .btn {
+        min-width: 180px;
+    }
+}
+
+/* Password Strength Colors */
+.password-weak .strength-segment:nth-child(1) {
+    background-color: #ff4d4f;
+}
+
+.password-moderate .strength-segment:nth-child(-n+2) {
+    background-color: #faad14;
+}
+
+.password-strong .strength-segment:nth-child(-n+3) {
+    background-color: #52c41a;
+}
+
+.password-very-strong .strength-segment {
+    background-color: #1890ff;
+}

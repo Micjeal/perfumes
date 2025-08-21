@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account - Luxe Parfum</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/register.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav">
+            <div class="nav__logo">
+                <a href="index.html"><h2>Luxe Parfum</h2></a>
+            </div>
+            <ul class="nav__menu" id="nav-menu">
+                <li class="nav__item">
+                    <a href="index.html" class="nav__link">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="shop.html" class="nav__link">Shop</a>
+                </li>
+                <li class="nav__item">
+                    <a href="index.html#about" class="nav__link">About Us</a>
+                </li>
+                <li class="nav__item">
+                    <a href="index.html#contact" class="nav__link">Contact</a>
+                </li>
+            </ul>
+            <div class="nav__cart">
+                <a href="checkout.html">
+                    <span class="cart-icon">🛒</span>
+                    <span class="cart-count" id="cart-count">0</span>
+                </a>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="register">
+            <div class="container">
+                <div class="register__container">
+                    <div class="register__header">
+                        <h1>Create an Account</h1>
+                        <p>Join Luxe Parfum to track orders, save favorites, and enjoy exclusive offers.</p>
+                    </div>
+
+                    <form id="register-form" class="form">
+                        <!-- Personal Information -->
+                        <div class="form__section">
+                            <h2 class="form__title">Personal Information</h2>
+                            
+                            <div class="form__row">
+                                <div class="form__group">
+                                    <label for="first-name" class="form__label">First Name *</label>
+                                    <input type="text" id="first-name" name="firstName" class="form__input" required>
+                                    <span class="form__error" id="first-name-error"></span>
+                                </div>
+                                <div class="form__group">
+                                    <label for="last-name" class="form__label">Last Name *</label>
+                                    <input type="text" id="last-name" name="lastName" class="form__input" required>
+                                    <span class="form__error" id="last-name-error"></span>
+                                </div>
+                            </div>
+
+                            <div class="form__group">
+                                <label for="email" class="form__label">Email Address *</label>
+                                <input type="email" id="email" name="email" class="form__input" required>
+                                <span class="form__error" id="email-error"></span>
+                            </div>
+
+                            <div class="form__group">
+                                <label for="phone" class="form__label">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" class="form__input" required>
+                                <span class="form__error" id="phone-error"></span>
+                            </div>
+
+                            <div class="form__group">
+                                <label for="password" class="form__label">Create Password *</label>
+                                <div class="password-input">
+                                    <input type="password" id="password" name="password" class="form__input" required minlength="8">
+                                    <button type="button" class="toggle-password" aria-label="Toggle password visibility">👁️</button>
+                                </div>
+                                <div class="password-strength" id="password-strength">
+                                    <div class="strength-meter">
+                                        <span class="strength-segment"></span>
+                                        <span class="strength-segment"></span>
+                                        <span class="strength-segment"></span>
+                                        <span class="strength-segment"></span>
+                                    </div>
+                                    <span class="strength-text" id="strength-text">Password strength</span>
+                                </div>
+                                <span class="form__error" id="password-error"></span>
+                            </div>
+
+                            <div class="form__group">
+                                <label for="confirm-password" class="form__label">Confirm Password *</label>
+                                <div class="password-input">
+                                    <input type="password" id="confirm-password" name="confirmPassword" class="form__input" required>
+                                    <button type="button" class="toggle-password" aria-label="Toggle password visibility">👁️</button>
+                                </div>
+                                <span class="form__error" id="confirm-password-error"></span>
+                            </div>
+                        </div>
+
+                        <!-- Shipping Address -->
+                        <div class="form__section">
+                            <h2 class="form__title">Shipping Address</h2>
+                            <p class="form__subtitle">We'll use this as your default shipping address</p>
+                            
+                            <div class="form__group">
+                                <label for="address" class="form__label">Street Address *</label>
+                                <input type="text" id="address" name="address" class="form__input" required>
+                                <span class="form__error" id="address-error"></span>
+                            </div>
+
+                            <div class="form__group">
+                                <label for="address2" class="form__label">Apartment, suite, etc. (optional)</label>
+                                <input type="text" id="address2" name="address2" class="form__input">
+                            </div>
+
+                            <div class="form__row">
+                                <div class="form__group">
+                                    <label for="city" class="form__label">City *</label>
+                                    <input type="text" id="city" name="city" class="form__input" required>
+                                    <span class="form__error" id="city-error"></span>
+                                </div>
+                                <div class="form__group">
+                                    <label for="state" class="form__label">State/Province *</label>
+                                    <select id="state" name="state" class="form__input" required>
+                                        <option value="">Select State</option>
+                                        <option value="AL">Alabama</option>
+                                        <option value="AK">Alaska</option>
+                                        <!-- Add all states here -->
+                                        <option value="WY">Wyoming</option>
+                                    </select>
+                                    <span class="form__error" id="state-error"></span>
+                                </div>
+                            </div>
+
+                            <div class="form__row">
+                                <div class="form__group">
+                                    <label for="zip" class="form__label">ZIP/Postal Code *</label>
+                                    <input type="text" id="zip" name="zip" class="form__input" required>
+                                    <span class="form__error" id="zip-error"></span>
+                                </div>
+                                <div class="form__group">
+                                    <label for="country" class="form__label">Country *</label>
+                                    <select id="country" name="country" class="form__input" required>
+                                        <option value="US">United States</option>
+                                        <option value="CA">Canada</option>
+                                        <option value="UK">United Kingdom</option>
+                                        <option value="AU">Australia</option>
+                                        <!-- Add more countries as needed -->
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form__group">
+                                <label class="form__checkbox">
+                                    <input type="checkbox" name="saveAddress" id="save-address" checked>
+                                    <span>Save this as my default shipping address</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Location Services -->
+                        <div class="form__section">
+                            <h2 class="form__title">Location Services</h2>
+                            <p>Allow us to use your location to provide better product recommendations and shipping estimates.</p>
+                            
+                            <div class="form__group">
+                                <label class="form__checkbox">
+                                    <input type="checkbox" name="allowLocation" id="allow-location">
+                                    <span>Allow Luxe Parfum to access my location</span>
+                                </label>
+                                <p class="form__help">You can change this later in your account settings.</p>
+                            </div>
+
+                            <div id="location-details" class="location-details location-details--hidden">
+                                <div class="form__group">
+                                    <label class="form__label">Detected Location:</label>
+                                    <div id="location-info" class="location-info">
+                                        <span id="location-text">Detecting your location...</span>
+                                        <button type="button" id="refresh-location" class="btn btn--text">
+                                            <span class="refresh-icon">🔄</span> Refresh
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Communication Preferences -->
+                        <div class="form__section">
+                            <h2 class="form__title">Communication Preferences</h2>
+                            <p>How would you like to hear from us?</p>
+                            
+                            <div class="form__group">
+                                <label class="form__checkbox">
+                                    <input type="checkbox" name="emailOffers" id="email-offers" checked>
+                                    <span>Email me with special offers and updates</span>
+                                </label>
+                            </div>
+                            <div class="form__group">
+                                <label class="form__checkbox">
+                                    <input type="checkbox" name="smsOffers" id="sms-offers">
+                                    <span>Send me text message offers (message and data rates may apply)</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Terms and Conditions -->
+                        <div class="form__section">
+                            <div class="form__group">
+                                <label class="form__checkbox">
+                                    <input type="checkbox" name="terms" id="terms" required>
+                                    <span>I agree to the <a href="terms.html" target="_blank" class="form__link">Terms of Service</a> and <a href="privacy.html" target="_blank" class="form__link">Privacy Policy</a> *</span>
+                                </label>
+                                <span class="form__error" id="terms-error"></span>
+                            </div>
+                            
+                            <div class="form__group">
+                                <label class="form__checkbox">
+                                    <input type="checkbox" name="ageVerification" id="age-verification" required>
+                                    <span>I confirm that I am at least 18 years old *</span>
+                                </label>
+                                <span class="form__error" id="age-error"></span>
+                            </div>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div class="form__actions">
+                            <button type="submit" class="btn btn--primary btn--full">Create Account</button>
+                            <p class="form__footer">
+                                Already have an account? <a href="login.html" class="form__link">Sign in</a>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__container">
+                <div class="footer__brand">
+                    <h3>Luxe Parfum</h3>
+                    <p>Discover your signature scent with our curated collection of luxury fragrances.</p>
+                </div>
+                <div class="footer__links">
+                    <div class="footer__group">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="shop.html">Shop</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__group">
+                        <h4>Help</h4>
+                        <ul>
+                            <li><a href="faq.html">FAQs</a></li>
+                            <li><a href="shipping.html">Shipping & Returns</a></li>
+                            <li><a href="privacy.html">Privacy Policy</a></li>
+                            <li><a href="terms.html">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__contact">
+                    <h4>Contact Us</h4>
+                    <p>Email: <a href="mailto:info@luxeparfum.com">info@luxeparfum.com</a></p>
+                    <p>Phone: <a href="tel:+1234567890">(123) 456-7890</a></p>
+                    <div class="footer__social">
+                        <a href="#" aria-label="Facebook">
+                            <span class="social-icon">📱</span>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <span class="social-icon">📸</span>
+                        </a>
+                        <a href="#" aria-label="Pinterest">
+                            <span class="social-icon">📌</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2025 Luxe Parfum. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/register.js"></script>
+</body>
+</html>

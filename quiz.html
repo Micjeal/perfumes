@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fragrance Finder Quiz - Luxe Parfum</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/quiz.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav">
+            <div class="nav__logo">
+                <a href="index.html"><h2>Luxe Parfum</h2></a>
+            </div>
+            <ul class="nav__menu" id="nav-menu">
+                <li class="nav__item">
+                    <a href="index.html" class="nav__link">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="shop.html" class="nav__link">Shop</a>
+                </li>
+                <li class="nav__item">
+                    <a href="index.html#about" class="nav__link">About Us</a>
+                </li>
+                <li class="nav__item">
+                    <a href="index.html#contact" class="nav__link">Contact</a>
+                </li>
+            </ul>
+            <div class="nav__cart">
+                <a href="checkout.html">
+                    <span class="cart-icon">🛒</span>
+                    <span class="cart-count" id="cart-count">0</span>
+                </a>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="quiz">
+            <div class="container">
+                <div class="quiz__header">
+                    <h1 class="quiz__title">Fragrance Finder Quiz</h1>
+                    <p class="quiz__description">Discover your perfect scent in just a few questions</p>
+                </div>
+
+                <div class="quiz__container">
+                    <div class="quiz__progress">
+                        <div class="progress__bar">
+                            <div class="progress__fill" id="progress-fill"></div>
+                        </div>
+                        <span class="progress__text" id="progress-text">Question 1 of 6</span>
+                    </div>
+
+                    <form class="quiz__form" id="quiz-form">
+                        <div class="question active" data-question="1">
+                            <h3 class="question__title">What's your preferred time to wear fragrance?</h3>
+                            <div class="question__options">
+                                <label class="option">
+                                    <input type="radio" name="q1" value="daytime">
+                                    <span class="option__text">Daytime (Fresh and light)</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="q1" value="evening">
+                                    <span class="option__text">Evening (Rich and sophisticated)</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="q1" value="both">
+                                    <span class="option__text">Both (Versatile and adaptable)</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="question" data-question="2">
+                            <h3 class="question__title">Which scent family appeals to you most?</h3>
+                            <div class="question__options">
+                                <label class="option">
+                                    <input type="radio" name="q2" value="floral">
+                                    <span class="option__text">Floral (Rose, jasmine, lily)</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="q2" value="woody">
+                                    <span class="option__text">Woody (Sandalwood, cedar, oak)</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="q2" value="citrus">
+                                    <span class="option__text">Citrus (Lemon, bergamot, grapefruit)</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="q2" value="oriental">
+                                    <span class="option__text">Oriental (Vanilla, amber, spices)</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="question" data-question="3">
+                            <h3 class="question__title">How would you describe your personality?</h3>
+                            <div class="question__options">
+                                <label class="option">
+                                    <input type="radio" name="q3" value="confident">
+                                    <span class="option__text">Confident and bold</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="q3" value="romantic">
+                                    <span class="option__text">Romantic and dreamy</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="q3" value="energetic">
+                                    <span class="option__text">Energetic and vibrant</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="q3" value="sophisticated">
+                                    <span class="option__text">Sophisticated and elegant</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="question" data-question="4">
+                            <h3 class="question__title">What season do you prefer?</h3>
+                            <div class="question__options">
+                                <label class="option">
+                                    <input type="radio" name="q4" value="spring">
+                                    <span class="option__text">Spring (Fresh and blooming)</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="q4" value="summer">
+                                    <span class="option__text">Summer (Light and refreshing)</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="q4" value="autumn">
+                                    <span class="option__text">Autumn (Warm and cozy)</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="q4" value="winter">
+                                    <span class="option__text">Winter (Rich and intense)</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="question" data-question="5">
+                            <h3 class="question__title">How long should a fragrance last on your skin?</h3>
+                            <div class="question__options">
+                                <label class="option">
+                                    <input type="radio" name="q5" value="light">
+                                    <span class="option__text">2-4 hours (Light and subtle)</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="q5" value="moderate">
+                                    <span class="option__text">4-6 hours (Moderate presence)</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="q5" value="long">
+                                    <span class="option__text">6+ hours (Long-lasting)</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="question" data-question="6">
+                            <h3 class="question__title">What's your preferred fragrance intensity?</h3>
+                            <div class="question__options">
+                                <label class="option">
+                                    <input type="radio" name="q6" value="subtle">
+                                    <span class="option__text">Subtle (Close to skin)</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="q6" value="moderate">
+                                    <span class="option__text">Moderate (Noticeable but not overpowering)</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="q6" value="strong">
+                                    <span class="option__text">Strong (Makes a statement)</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="quiz__buttons">
+                            <button type="button" class="btn btn--secondary" id="prev-btn" style="display: none;">Previous</button>
+                            <button type="button" class="btn btn--primary" id="next-btn">Next</button>
+                            <button type="submit" class="btn btn--primary" id="submit-btn" style="display: none;">Get My Results</button>
+                        </div>
+                    </form>
+
+                    <div class="quiz__result" id="quiz-result" style="display: none;">
+                        <h2 class="result__title">Your Perfect Match</h2>
+                        <div class="result__content" id="result-content">
+                            <!-- Results will be displayed here -->
+                        </div>
+                        <div class="result__actions">
+                            <a href="shop.html" class="btn btn--primary">Shop Recommended Fragrances</a>
+                            <button type="button" class="btn btn--secondary" id="restart-quiz">Take Quiz Again</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__container">
+                <div class="footer__brand">
+                    <h3>Luxe Parfum</h3>
+                    <p>Discover your signature scent with our curated collection of luxury fragrances.</p>
+                </div>
+                <div class="footer__links">
+                    <div class="footer__group">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="shop.html">Shop</a></li>
+                            <li><a href="quiz.html">Fragrance Finder</a></li>
+                            <li><a href="index.html#about">About Us</a></li>
+                            <li><a href="index.html#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__group">
+                        <h4>Customer Care</h4>
+                        <ul>
+                            <li><a href="#">Shipping Info</a></li>
+                            <li><a href="#">Returns</a></li>
+                            <li><a href="#">Size Guide</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__group">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Newsletter</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2024 Luxe Parfum. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/quiz.js"></script>
+</body>
+</html>

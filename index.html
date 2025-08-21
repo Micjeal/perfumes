@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxe Parfum - Discover Your Signature Scent</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/homepage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav">
+            <div class="nav__logo">
+                <h2>Luxe Parfum</h2>
+            </div>
+            <ul class="nav__menu" id="nav-menu">
+                <li class="nav__item">
+                    <a href="#home" class="nav__link active-link">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="shop.html" class="nav__link">Shop</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#about" class="nav__link">About Us</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#contact" class="nav__link">Contact</a>
+                </li>
+            </ul>
+           
+            <div class="nav__cart">
+                <a href="checkout.html">
+                    <span class="cart-icon">🛒</span>
+                    <span class="cart-count" id="cart-count">0</span>
+                </a>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero__container">
+                <div class="hero__content">
+                    <h1 class="hero__title">Discover Your Signature Scent</h1>
+                    <p class="hero__description">
+                        Immerse yourself in a world of luxury fragrances crafted for the discerning individual. 
+                        Each bottle tells a story, each scent captures a moment in time.
+                    </p>
+                    <a href="#featured" class="hero__cta btn btn--primary">Shop Now</a>
+                </div>
+            </div>
+            <div class="hero__bg">
+                <img src="https://images.pexels.com/photos/965989/pexels-photo-965989.jpeg" alt="Luxury perfume bottles" class="hero__img">
+            </div>
+        </section>
+
+        <!-- Featured Products -->
+        <section class="featured" id="featured">
+            <div class="container">
+                <h2 class="section__title">Featured Collections</h2>
+                <p class="section__description">Curated selections of our most coveted fragrances</p>
+                <div class="featured__grid">
+                    <div class="featured__card">
+                        <img src="https://images.pexels.com/photos/1190829/pexels-photo-1190829.jpeg" alt="Floral Collection" class="featured__img">
+                        <h3 class="featured__title">Floral Essence</h3>
+                        <p class="featured__description">Delicate petals and fresh blooms</p>
+                        <a href="shop.html?category=floral" class="btn btn--secondary">Explore</a>
+                    </div>
+                    <div class="featured__card">
+                        <img src="https://images.pexels.com/photos/3685530/pexels-photo-3685530.jpeg" alt="Woody Collection" class="featured__img">
+                        <h3 class="featured__title">Woody Sophistication</h3>
+                        <p class="featured__description">Rich woods and earthy notes</p>
+                        <a href="shop.html?category=woody" class="btn btn--secondary">Explore</a>
+                    </div>
+                    <div class="featured__card">
+                        <img src="https://images.pexels.com/photos/6636286/pexels-photo-6636286.jpeg" alt="Citrus Collection" class="featured__img">
+                        <h3 class="featured__title">Citrus Fresh</h3>
+                        <p class="featured__description">Vibrant and energizing scents</p>
+                        <a href="shop.html?category=citrus" class="btn btn--secondary">Explore</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="about">
+            <div class="container">
+                <div class="about__container">
+                    <div class="about__content">
+                        <h2 class="section__title">The Art of Fragrance</h2>
+                        <p class="about__description">
+                            For over three decades, Luxe Parfum has been crafting exceptional fragrances that 
+                            capture the essence of elegance and sophistication. Our master perfumers blend 
+                            the finest ingredients from around the world to create scents that are both 
+                            timeless and contemporary.
+                        </p>
+                        <div class="about__features">
+                            <div class="about__feature">
+                                <h3>Premium Ingredients</h3>
+                                <p>Sourced from the world's finest fragrance houses</p>
+                            </div>
+                            <div class="about__feature">
+                                <h3>Expert Craftsmanship</h3>
+                                <p>Created by master perfumers with decades of experience</p>
+                            </div>
+                            <div class="about__feature">
+                                <h3>Sustainable Practices</h3>
+                                <p>Committed to ethical sourcing and environmental responsibility</p>
+                            </div>
+                        </div>
+                        <a href="quiz.html" class="btn btn--primary">Find Your Scent</a>
+                    </div>
+                    <div class="about__image">
+                        <img src="https://images.pexels.com/photos/3738349/pexels-photo-3738349.jpeg" alt="Perfume making process" class="about__img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+            <div class="container">
+                <h2 class="section__title">What Our Customers Say</h2>
+                <p class="section__description">Hear from our satisfied customers</p>
+                <div class="testimonials__grid">
+                    <div class="testimonial__card">
+                        <div class="testimonial__rating">★★★★★</div>
+                        <p class="testimonial__text">"The perfect scent that lasts all day. I get compliments everywhere I go!"</p>
+                        <div class="testimonial__author">- Sarah M.</div>
+                    </div>
+                    <div class="testimonial__card">
+                        <div class="testimonial__rating">★★★★★</div>
+                        <p class="testimonial__text">"Outstanding customer service and fast shipping. The packaging was beautiful!"</p>
+                        <div class="testimonial__author">- James T.</div>
+                    </div>
+                    <div class="testimonial__card">
+                        <div class="testimonial__rating">★★★★★</div>
+                        <p class="testimonial__text">"The fragrance finder quiz helped me discover my new signature scent. Love it!"</p>
+                        <div class="testimonial__author">- Emily R.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="newsletter">
+            <div class="container">
+                <div class="newsletter__container">
+                    <div class="newsletter__content">
+                        <h3>Join Our Fragrance Journey</h3>
+                        <p>Subscribe to our newsletter for exclusive offers, new arrivals, and fragrance tips.</p>
+                    </div>
+                    <form class="newsletter__form">
+                        <input type="email" placeholder="Your email address" class="newsletter__input" required>
+                        <button type="submit" class="btn btn--primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- How to Choose Section -->
+        <section class="guide">
+            <div class="container">
+                <h2 class="section__title">How to Choose Your Perfect Scent</h2>
+                <p class="section__description">A simple guide to finding your signature fragrance</p>
+                <div class="guide__steps">
+                    <div class="guide__step">
+                        <div class="guide__number">1</div>
+                        <h3>Know the Fragrance Families</h3>
+                        <p>Understand different fragrance categories like floral, oriental, woody, and fresh to identify what appeals to you.</p>
+                    </div>
+                    <div class="guide__step">
+                        <div class="guide__number">2</div>
+                        <h3>Consider the Occasion</h3>
+                        <p>Daytime scents are typically lighter, while evening scents can be more intense and sensual.</p>
+                    </div>
+                    <div class="guide__step">
+                        <div class="guide__number">3</div>
+                        <h3>Test on Your Skin</h3>
+                        <p>Fragrances react differently with each person's skin chemistry. Always test before buying.</p>
+                    </div>
+                    <div class="guide__step">
+                        <div class="guide__number">4</div>
+                        <h3>Take Your Time</h3>
+                        <p>Let the fragrance develop on your skin for a few hours before making a decision.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Best Sellers Section -->
+        <section class="bestsellers">
+            <div class="container">
+                <h2 class="section__title">Our Best Sellers</h2>
+                <p class="section__description">Discover our most loved fragrances</p>
+                <div class="bestsellers__grid">
+                    <div class="bestseller__card">
+                        <img src="https://images.pexels.com/photos/1040424/pexels-photo-1040424.jpeg" alt="Midnight Oud" class="bestseller__img">
+                        <h3>Midnight Oud</h3>
+                        <p class="bestseller__price">$120.00</p>
+                        <button class="btn btn--secondary">Add to Cart</button>
+                    </div>
+                    <div class="bestseller__card">
+                        <img src="https://images.pexels.com/photos/3738348/pexels-photo-3738348.jpeg" alt="Rose Velvet" class="bestseller__img">
+                        <h3>Rose Velvet</h3>
+                        <p class="bestseller__price">$98.00</p>
+                        <button class="btn btn--secondary">Add to Cart</button>
+                    </div>
+                    <div class="bestseller__card">
+                        <img src="https://images.pexels.com/photos/1029836/pexels-photo-1029836.jpeg" alt="Citrus Zest" class="bestseller__img">
+                        <h3>Citrus Zest</h3>
+                        <p class="bestseller__price">$85.00</p>
+                        <button class="btn btn--secondary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Limited Edition Section -->
+        <section class="limited">
+            <div class="container">
+                <div class="limited__container">
+                    <div class="limited__content">
+                        <span class="limited__badge">Limited Edition</span>
+                        <h2>Black Orchid Elixir</h2>
+                        <p>Experience the rare and intoxicating blend of black truffle, black orchid, and dark chocolate. Only 500 bottles available worldwide.</p>
+                        <a href="#" class="btn btn--primary">Shop Now</a>
+                    </div>
+                    <div class="limited__image">
+                        <img src="https://images.pexels.com/photos/4202325/pexels-photo-4202325.jpeg" alt="Black Orchid Elixir">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gift Cards Section -->
+        <section class="gift-cards">
+            <div class="container">
+                <div class="gift-cards__container">
+                    <div class="gift-cards__image">
+                        <img src="https://images.pexels.com/photos/6347959/pexels-photo-6347959.jpeg" alt="Gift Card">
+                    </div>
+                    <div class="gift-cards__content">
+                        <h2>Give the Gift of Scent</h2>
+                        <p>Not sure which fragrance to choose? Our gift cards are the perfect solution for any occasion.</p>
+                        <div class="gift-cards__values">
+                            <button class="btn btn--outline">$50</button>
+                            <button class="btn btn--outline">$100</button>
+                            <button class="btn btn--outline">$150</button>
+                            <button class="btn btn--outline">$200</button>
+                        </div>
+                        <button class="btn btn--primary">Purchase Gift Card</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+            <!-- Contact Section -->
+            <section class="contact" id="contact">
+                <div class="container">
+                    <h2 class="section__title">Get In Touch</h2>
+                    <p class="section__description">We'd love to hear from you</p>
+                    <div class="contact__container">
+                        <div class="contact__info">
+                            <div class="contact__item">
+                                <h3>Visit Our Flagship Store</h3>
+                                <p>123 Luxury Avenue<br>Beverly Hills, CA 90210</p>
+                            </div>
+                            <div class="contact__item">
+                                <h3>Contact Information</h3>
+                                <p>Phone: (555) 123-4567<br>Email: info@luxeparfum.com</p>
+                            </div>
+                            <div class="contact__item">
+                                <h3>Store Hours</h3>
+                                <p>Monday - Saturday: 10AM - 8PM<br>Sunday: 12PM - 6PM</p>
+                            </div>
+                        </div>
+                        <form class="contact__form" id="contact-form">
+                            <input type="text" placeholder="Your Name" class="contact__input" required>
+                            <input type="email" placeholder="Your Email" class="contact__input" required>
+                            <textarea placeholder="Your Message" class="contact__textarea" required></textarea>
+                            <button type="submit" class="btn btn--primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__container">
+                <div class="footer__brand">
+                    <h3>Luxe Parfum</h3>
+                    <p>Discover your signature scent with our curated collection of luxury fragrances.</p>
+                </div>
+                <div class="footer__links">
+                    <div class="footer__group">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="shop.html">Shop</a></li>
+                            <li><a href="quiz.html">Fragrance Finder</a></li>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__group">
+                        <h4>Customer Care</h4>
+                        <ul>
+                            <li><a href="#">Shipping Info</a></li>
+                            <li><a href="#">Returns</a></li>
+                            <li><a href="#">Size Guide</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__group">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Newsletter</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2024 Luxe Parfum. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/auth.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
